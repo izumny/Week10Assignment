@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        h1 {text-align: center;}
+        body {background-image: url("cats3.webp");}
+        
+    </style>
+</head>
+<body class="container">
+    <br>
+    <h1 style="color: gray;">SMLB Cat Cafe Manager</h1>
+    <h3 style="color: gray;">Expiration Checker</h3>
+    
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-productname">Product Name</label>
+                        <input type="text" class="form-control" id="new-productname" placeholder="Product Name">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-opened-date">Opened Date</label>
+                        <input type="date" class="form-control" id="new-opened-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-expiration-date">Expiration Date</label>
+                        <input type="date" class="form-control" id="new-expiration-date">
+                    </div>
+                </div>
+            </div>
+            <div>
+            <button id="add" class="btn btn-primary from-control">Create</button>
+            </div>
+        </div>
+    </div>
+    <table id="list" class="table table-light table-striped">
+        <tr>
+            <th>Product Name</th>
+            <th>Purchased Date</th>
+            <th>Opened Date</th>
+            <th>Expiration Date</th>
+            <th>Discarded</th>
+        </tr>
+    </table>
+    <br>
+
+    <h3 style="color: gray;">Cleaning Duty for This Week</h3>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-team-name">Team Name</label>
+                        <input type="text" class="form-control" id="new-team-name">
+                    </div>
+                </div>
+            </div>
+            <div >
+                <button id="new-team" class="btn btn-primary from-control">Create</button>
+            </div>
+        </div>
+    </div><br>
+    <div id="teams">
+    </div>
+
+
+    <script src="catcafemng.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
